@@ -57,7 +57,6 @@ app.MapGet("/api/get-product/{id:int}", async (int id, AppDbContext db) =>
 })
 .WithName("GetProductById");
 
-
 // Action de Suppression ajoutée par mon collaborateur
 app.MapDelete("/api/products/{id:int}", async (int id, AppDbContext db) =>
 {
